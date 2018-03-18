@@ -1,0 +1,44 @@
+/*工具*/
+.fl{
+	float:left;
+}
+.fr{
+	float:right;
+}
+.clearfix:after{
+	content:"";
+	display: block;
+	clear:both;
+}
+.clearfix{
+	*zoom:1;
+}
+.fixed-wrap{
+	width: 1192px;
+}
+.flow-wrap{
+	width: 100%;
+}
+.padding{
+	padding-left: 8px;
+}
+html{
+	overflow-x: hidden
+}
+.h:after{
+	content: "";
+	background:url(../img/sprites.png)no-repeat 0 -701px;
+	width:10px;
+	height:12px;
+	display: inline-block;
+	margin-left:3px;
+}
+.v:after{
+	content: "";
+	background:url(../sousuoimg/spirit.png)no-repeat 0 -101px;
+	display: inline-block;
+	width:7px;
+	height:4px;
+	margin-left: 7px;
+}
+

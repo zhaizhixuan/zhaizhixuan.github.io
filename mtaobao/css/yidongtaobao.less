@@ -1,0 +1,465 @@
+//变量
+@num :108rem;
+html{
+    height: 100%;
+    overflow:hidden;
+}
+body{
+    height: 100%;
+    overflow:auto;
+    background-color:#f4f4f4;
+}
+//头部
+.tb-head{
+    width:1080/@num; 
+    height:144/ @num ;
+    background:url(../img/taobao-headbg.png)repeat-y;
+    background-size: 100%; 
+    position: absolute;
+    left:0px;
+    top:0;
+    z-index: 1;
+    .tb-sys{
+        width:180/@num;
+        height:145/@num;
+        background:url(../img/tbhead-sao.png)no-repeat;
+        background-size: 100%;
+        float: left;
+    }
+    .tb-search{
+        width: 875/@num;
+        height:118/@num;
+        border-bottom: 3/@num solid #ffffff;
+        float: left;
+        position:relative;
+        
+       &:before{
+           content: "";
+           width: 46/@num;
+           height: 51/@num;
+           background:url(../img/fangdajing.png)no-repeat;
+           display: block;
+           position: absolute;
+           left:7/@num;
+           top:48/@num;
+           background-size: 100%;
+       }
+         
+        &:after{
+           content: "";
+           width: 52/@num;
+           height: 51/@num;
+           background:url(../img/tbhead-zhao.png)no-repeat;
+           display: block;
+           position: absolute;
+           right:9/@num;
+           top:48/@num;
+           background-size:100%;
+        }
+        span{
+            font-size:42/@num;
+            line-height:42/@num;
+            color: white;
+           position: absolute;
+           left:69/@num;
+           top:52/@num;    
+        }
+    }    
+}
+
+//内容
+.tb-main{
+   width: 100%; 
+   margin:145/@num 0; 
+   .tb-banner{
+      height:334/@num;  
+      img{
+          width: 100%;
+          height:334/@num; 
+      }
+   }
+   .tbapp-list{
+      height:411/@num; 
+      padding:23/@num 0/@num 33/@num 10/@num;
+      background-color: white;
+     a{
+         width: 126/@num; 
+         height:205/@num;
+         float: left;
+         padding:0 44/@num;
+         display:block;
+       img{
+           width:126/@num;
+           height:126/@num;
+           float: left;
+       }  
+       span{
+           width:100%;
+           height:79/@num;
+           text-align:center;
+           font-size:30/@num;
+           line-height:79/@num;
+           display: block;
+           float: left;
+           color: #6d6d6d; 
+       }
+     }  
+   }
+   .tb-headline{
+       height: 141/@num;
+       background-color: white;
+      dt{
+          width: 180/@num;
+          height: 141/@num;
+          background:url(../img/headline.png)no-repeat;
+          text-indent: -99999/@num;
+          background-size: 100%;
+          float:left ;
+          a{
+              display: block;
+          }
+       }
+       dd{
+           margin-bottom: 22/@num;
+       }
+       .zan{
+           font-size:27/@num;
+           line-height:36/@num;
+           color: #da5c21;
+           width: 76/@num;
+           height: 40/@num;
+           border:1/@num solid #bf6540;
+           text-align: center;
+           float: left;
+           margin-right: 10/@num;
+       }
+       .tag{
+           font-size:33/@num;
+           line-height:39/@num;
+           color: #333333;
+           float: left;
+           font-weight: bold;
+           height: 39/@num; 
+           letter-spacing:3/@num;
+       }
+   }
+   .iphone-adbanner{
+      height: 245/@num;
+      margin-bottom:30/@num;
+      img{
+         height: 245/@num; 
+         width:100%;
+      }
+   }
+   .tb-item{
+//     height: 976/@num;
+       display: flex;
+       justify-content: space-between;
+       flex-wrap: wrap;
+      
+      .mod-list{
+          width:540/@num;
+          height:323/@num;
+          float: left;
+          margin-bottom:1/@num;
+          position: relative;
+        img{
+          width:540/@num;
+          height:323/@num;
+          overflow: hidden; 
+        }
+        .time-box{
+            position: absolute;
+            left:29/@num;
+            top:89/@num;
+            font-size:20/@num;
+            line-height:34/@num;
+            color: #ff5050;
+            font-weight: bold;
+            
+            .time{
+                padding:0 5/@num;
+                float: left;
+                border:1/@num solid #ba5962;
+                background-color: #fe394b;
+                color: white;
+                text-align: center;
+                border-radius:5/@num;
+                letter-spacing:3/@num;
+            }
+            .colon{
+                float: left;
+                margin:0 2/@num;
+            }
+         }
+         
+      }
+   }
+   .ti-item{
+       height:359/@num;
+       padding-top:55/@num;
+       position: relative;
+      
+     .f-box{
+        height:359/@num;
+        
+       .f-box-left{
+           float: left;
+           width: 720/@num;
+           height:359/@num;
+           overflow: hidden;
+          
+          img{
+           width: 720/@num;
+           height:359/@num;
+          }
+       }
+       .f-box-right{
+           width: 360/@num;
+           height:359/@num;
+           overflow: hidden;
+           float: left;
+           
+          img{
+           width: 360/@num;
+           height:359/@num;  
+          }
+       }
+     } 
+    .head{
+        width:285/@num;
+        height:84/@num;
+        background:url(../img/dakabg-png.png)repeat-y;
+        font-size:45/@num;
+        line-height: 84/@num;
+        color: #fff9ff;
+        text-align: center;
+        border-top-right-radius:42/@num;
+        border-bottom-right-radius:42/@num;
+        position: absolute;
+        left: 0;
+        top:25/@num;
+        letter-spacing:4/@num;
+        background-size: 100%;
+    }
+    .clo-pur{
+        background:url(../img/quanqiu-bg.png)repeat-y;
+        background-size: 100%;
+    }
+    .clo-or{
+        background:url(../img/shihui-gb.png)repeat-y;
+        background-size: 100%;
+    }
+    .clo-bl{
+        background:url(../img/chaolu-bg.png)repeat-y;
+        background-size: 100%;
+    }
+    .clo-ye{
+        background:url(../img/wtao-bg.png)repeat-y;
+        background-size: 100%;
+    }
+    .co-gr{
+        background:url(../img/shenghuobg.png)repeat-y;
+        background-size: 100%;
+    }
+    .goodshop{
+        display: block;
+        overflow: hidden;
+        height: 361/@num;
+        width: 100%;
+       
+       img{
+        height: 361/@num;
+        width: 100%;
+       }
+    }
+    .sh-box{
+        
+        a{
+            float: left;
+            width: 360/@num;
+            height: 360/@num;
+            overflow: hidden;
+            
+           img{
+            width: 360/@num;
+            height: 360/@num;
+           }
+        }
+    }
+   }
+   .fo-item{
+       height:354/@num;
+       display: flex;
+       justify-content: space-around;
+       
+      .fo-list{
+         width:268/@num;
+         height:354/@num;
+         border: 1/@num solid #f4f4f4;
+         overflow: hidden;
+         
+        img{
+         width:268/@num;
+         height:354/@num; 
+        }
+      }
+   }
+   .morebox{
+       height:104/@num;
+       padding:25/@num 0  0 34/@num;
+       background-color: #ffffff;
+      
+      .set{
+          width: 145/@num;
+          height: 51/@num;
+          box-sizing: border-box;
+          border:1/@num solid #bdbdbd;
+          float: left;
+          font-size: 30/@num;
+          line-height: 51/@num;
+          text-align: center;
+          color: #3e3e3e;
+          border-radius:25/@num;
+          margin-right: 15/@num;
+      }
+     .dot{
+          width: 6/@num;
+          height: 6/@num;
+          background-color: #cacaca;
+          border-radius: 50%;
+          float:left;
+          margin:23/@num 6/@num 0 0 ;
+      }
+     .more{
+         width: 190/@num;
+         height: 51/@num;
+         font-size: 30/@num;
+         line-height:51/@num;
+         color: black;
+         float: right;
+       
+       &:after{
+           content: "";
+           width:17/@num;
+           height:28/@num;
+           display:inline-block;
+           background:url(../img/more-ico.png)no-repeat;
+           margin-left: 11/@num;
+           background-size: 100%;
+       }
+     }
+   }
+   .th-item{
+      height: 719/@num;
+      
+      a{
+          width:360/@num;
+          height:360/@num;  
+          float:left;
+          
+         img{
+          width:360/@num;
+          height:360/@num;   
+         }
+      }
+   }
+   .ts-item{
+       background-color: white;
+       width:100%;
+       
+     .ts-list{
+      width:485/@num;
+      margin:0 27/@num 35/@num 27/@num;
+      overflow: hidden;
+      height: 408/@num;
+      float: left;  
+     
+     .ts-head{
+         height: 93/@num;
+         
+       .ts-title{
+           font-size:36/@num;
+           line-height: 93/@num;
+           height: 93/@num;
+           color: #353535;
+           font-weight:bold;
+           margin-right: 14/@num;
+       }
+       .nub{
+           font-size: 30/@num;
+           line-height: 93/@num;
+           height: 93/@num;
+           color: #999999;
+       }
+     }
+     .big-picture{
+         width: 320/@num;
+         height: 320/@num;
+         float: left;
+         overflow: hidden;
+        
+        img{
+         width: 320/@num;
+         height: 320/@num; 
+        }
+        
+     }
+     .la-picture{
+         width: 157/@num;
+         height: 157/@num;
+         float: right;
+        
+        img{
+         width: 157/@num;
+         height: 157/@num; 
+        }
+     }
+   }
+   }
+   .love-item{
+       margin-top:55/@num;
+       background-color: white;
+       
+       .love-head{
+           height: 100/@num;
+           background:url(../img/love-head.png)no-repeat;
+           background-size: 100%;
+       }
+       .love-list{
+           display: flex;
+           justify-content: space-between;
+           flex-wrap:wrap;
+           
+          a{
+           display:block;
+           width:533/@num;
+           height:100%;  
+           margin-bottom:16/@num;
+           
+          img{
+           width:533/@num;
+           height:auto;  
+          }  
+          }
+       }
+   }
+}
+//页脚
+.tb-foot{
+   width:100%;
+   height:131/ @num;
+   position: absolute;
+   left:0;
+   bottom:0;
+   display:flex;
+   justify-content: space-around;
+   padding-top:13/@num;
+   background-color: #ffffff;
+   z-index: 1;
+   
+img{
+      width:121/@num;
+      height:121/@num;
+  }
+}

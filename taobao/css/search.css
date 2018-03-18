@@ -1,0 +1,1035 @@
+/*头部*/
+.s-head{
+	height: 75px;
+	margin:0 auto;
+}
+/*头部左侧*/
+.s-head .s-head_left{
+	width:260px;
+	height:75px;
+}
+.s-head_left .logo{
+	width:106px;
+	height:75px;
+	background:url(../img/s-spirit.png)no-repeat;
+	text-indent: -9999px;
+}
+.s-head_left .moremarkbox{
+	width:78px;
+	height:22px;
+	border:1px solid #e2e2e2;
+	margin:26px 0 0 14px;
+	position: relative;
+}
+.moremarkbox .moretext{
+	font:12px/22px "宋体";
+	height:22px;
+	color: #666666;
+	margin: 0 6px 0 10px;
+}
+.moremarkbox .more-ico{
+	width:7px;
+	height:4px;
+	background:url(../img/s-spirit.png) no-repeat 0 -101px;
+	margin-top: 10px;
+}
+.moremarkbox .menu-box{
+	width:286px;
+	border:1px solid #e2e2e2;
+	position: absolute;
+	left:-1px;
+	top:22px;
+	z-index: 1;
+	background-color: white;
+	display:none;
+}
+.moremarkbox .menu{
+	height:30px;
+	font:12px/28px "宋体";
+}
+.menu .menu-title{
+	color: #666666;
+	font-weight:bold;
+	height:28px;
+	padding:0 15px;
+}
+.menu .menu-list{
+	height:28px;
+}
+.menu-list a{
+	float: left;
+	color: #666666;
+	padding-right: 10px;
+}
+.moremarkbox .line{
+	width:80px;
+	height:1px;
+	background-color:white;
+	display: block;
+	z-index:1;
+	margin-top:22px;
+	position: relative;
+	display: none;
+}
+.moremarkbox:hover .menu-box{
+	display: block;
+}
+.moremarkbox:hover .line{
+	display: block;
+}
+
+
+
+
+
+
+
+
+
+
+/*头部右侧*/ 
+.s-head  .s-head_right{
+	width:682px;
+	height:35px;
+	margin-top: 20px;
+	position: relative;
+}
+.s-head_right .search{
+	width:598px;
+	height:31px;
+	border:2px solid #ff5500;
+	float: left;
+	outline: none;
+}
+.s-head_right .button{
+	width:80px;
+	height:35px;
+	border:none;
+	background-color: #ff4400;
+	float: left;
+	color: white;
+	font:bold 14px/35px "宋体";
+	text-align: center;
+	letter-spacing: 7px;
+	outline: none;
+}
+.s-head_right .s-bodybox{
+	width:68px;
+	height:31px;
+	border-right: 1px solid #e5e5e5;
+	background-color:#f5f5f5;
+	display: block;
+	position: absolute;
+	left:2px;
+	top:2px;
+}
+.s-bodybox .body{
+	font:12px/31px "宋体";
+	height:33px;
+	text-align: center;
+	margin-left: 17px;
+}
+.s-bodybox .s-bodybox-ico{
+	width:7px;
+	height:4px;
+	background:url(../img/s-spirit.png)no-repeat 0 -123px;
+	margin:13px 0 0 13px;
+}
+.s-head_right .camera{
+	width:17px;
+	height:15px;
+	background:url(../img/s-spirit.png)no-repeat 0 -139px;
+	position: absolute;
+	right:90px;
+	top:10px;
+}
+/*内容*/
+.s-box{
+	margin:0 auto;
+}
+/*内容左侧*/
+.s-box .content-left{
+	width:941px;
+}
+/*文字区域*/
+.text-head{
+	height:38px;
+	border-bottom: 2px solid #ff4400;
+}
+.text-head a{
+	font:16px/38px "宋体";
+	color:#333333;
+	padding:0 20px;
+	float: left;
+}
+.text-head .a1{
+	background-color: #ff4400;
+	color:white;
+}
+.text-head a:hover{
+	background-color: #ff4400;
+	color: white;
+}
+.text .classify{
+	height:46px;
+}
+.classify .classfy-left{
+	width:100px;
+	height:46px;
+}
+.classfy-left .all{
+	font:12px/46px "宋体";
+	height:46px;
+	color: #666666;
+	margin-left:20px;
+}
+.classfy-left .classfy-ico{
+	width:5px;
+	height:9px;
+	background:url(../img/s-spirit.png)no-repeat 0 -168px;
+	margin:20px 0 0 5px;
+}
+.classify .classfy-right{
+	width:84px;
+	height:24px;
+	border: 1px solid #e8e8e8;
+	margin-top: 10px;
+	background-color: #f6f6f6;
+}
+.classfy-right .opt{
+	font:12px/24px"宋体";
+	height:24px;
+	color: #6b6b6b;
+	margin-left:9px;
+}
+.classfy-right .opt-ico{
+	width:7px;
+	height:4px;
+	background:url(../img/s-spirit.png) no-repeat 0 -187px;
+	margin:9px 0 0 9px;
+}
+/*品牌框*/
+.text .result{
+	border:1px solid #e8e8e8;
+	padding:0 8px;
+}
+.result .result-list{
+	font:12px/36px arial,"宋体";
+	color: #999999;
+	border-bottom: 1px dashed #dedede;
+}
+.result-list .list-title{
+	margin-left: 11px;
+	width:102px;
+}
+.result-list .list-main{
+	width:716px;
+}
+.list-main .menu{
+	color:#000000;
+	padding-right:40px;
+	float: left;
+}
+.list-main a{
+	color:#000000;
+	padding-right:40px;
+	float: left;
+}
+.list-main a:hover{
+	color: #ff4400;
+}
+.result-list  .list-right{
+	width:93px;
+	font:12px/16px "宋体";
+	padding-top:8px;
+}
+.list-right .duoxuan{
+	padding:0 3px;
+	border: 1px solid #dad9d9;
+	margin-right: 16px;
+	color: #404040;
+}
+.list-right .gengduo{
+	height:18px;
+	color: #404040;
+}
+.list-right .gengduo-ico{
+	width:7px;
+	height:4px;
+	background:url(../img/s-spirit.png) no-repeat 0 -101px;
+	margin:7px 0 0 2px;
+}
+.list-main .option-ico{
+	width:7px;
+	height:4px;
+	background:url(../img/s-spirit.png) no-repeat 0 -101px;
+	margin:17px 0 0 7px;
+}
+.result .no-boder{
+	border-bottom: none;
+}
+/*你是不是找*/
+.love{
+	height: 42px;
+	border:1px solid #e8e8e8;
+	margin:10px 0;
+	font:12px/42px "宋体";
+}
+.love .love-title{
+	color: #9a9a9a;
+	margin:0 28px 0 18px;
+}
+.love-main a{
+	color: #6c6c6c;
+	padding-right: 20px;
+	float: left;
+}
+.love-main a:hover{
+	color: orange;
+}
+
+/*综合排序*/
+.mode{
+	height:78px;
+	border: 1px solid #e8e8e8;
+	margin-bottom: 22px;
+}
+.mode .mode-top{
+	height:39px;
+	border-bottom: 1px solid #e8e8e8;
+	background-color: #f5f5f5;
+}
+.mode-top .mt-left{
+	width:574px;
+	height:39px;
+}	
+.mt-left .text{
+	height:39px;
+	width:361px;
+}
+.text .word{
+	font:12px/39px "宋体";
+	height:39px;
+	padding:0 18px;
+	float: left;
+	border-left:1px solid #f5f5f5;
+	border-right:1px solid #f5f5f5;
+	position: relative;
+}
+.text .word:hover{
+	background-color: white;
+	color: #ff5500;
+	border-color: #e5e5e5;
+	z-index: 1;
+}
+.word .word-ico{
+	width:7px;
+	height:4px;
+	background:url(../img/s-spirit.png) no-repeat 0 -101px;
+	margin:18px 0 0 4px;
+}
+.mt-left .picture{
+	width:213px;
+	height:39px;
+}
+.picture input{
+	width:49px;
+	height:21px;
+	border:1px solid #dfdfdf;
+	float:left;
+	margin-top: 8px;
+	padding-left: 4px;
+	color: #757575;
+	outline: none;
+}
+.picture .line{
+	width:4px;
+	height:1px;
+	background-color:black;
+	margin:17px 3px 0 3px;
+}
+.picture .gb-picture{
+	width:76px;
+	height:22px;
+	background:url(../img/s-spirit.png) no-repeat 0 -205px;
+	margin:9px 0 0 15px;
+}
+.mode-top .mt-right{
+	width:252px;
+}
+.mt-right .one{
+	width:67px;
+	height:39px;
+	border-right: 1px solid #e5e5e5;
+	font:12px/39px"宋体";
+	color:#6d6d6d;
+}
+.one .one-ico{
+	width:7px;
+	height:4px;
+	background:url(../img/s-spirit.png) no-repeat 0 -101px;
+	margin:18px 0 0 4px;
+}
+.mt-right .two{
+	height:39px;
+	width:81px;
+}
+.two .to{
+	width:40px;
+	height:39px;
+	background:url(../img/s-spirit.png) no-repeat 0 -246px;
+}
+.two .tt{
+	width:40px;
+	height:39px;
+	background:url(../img/s-spirit.png)no-repeat 0 -301px;
+}
+.mt-right .three{
+	height:39px;
+	width:87px;
+	border-left: 1px solid #e5e5e5;
+	padding-left: 15px;
+}
+.three .x{
+	width:6px;
+	height:9px;
+	background:url(../img/s-spirit.png)no-repeat 0 -356px;
+	margin-top:14px;
+}
+.three .d{
+	width: 6px;
+	height: 9px;
+	background:url(../img/s-spirit.png)no-repeat 0 -382px;
+	margin-top:14px;
+}
+.three .number{
+	width:30px;
+	height:9px;
+	font:9px/9px "宋体";
+	color:#666666;
+	margin:0 16px;
+	margin-top: 15px;
+}
+.mode-bottom .m-left{
+	width:632px;
+	height:18px;
+	margin-top:10px;
+	border-right:1px solid #ededed;
+	padding-left:12px;
+}
+.m-left a{
+	float: left;
+	margin-right: 12px;
+}
+.m-left .side{
+	width:11px;
+	height: 11px;
+	border: 1px solid #cccccc;
+	margin:2px 4px 0 0;
+	background-color: white;
+	position: relative;
+}
+.side .gou{
+	width:9px;
+	height:6px;
+	position: absolute;
+	left:0;
+	top:3px;
+	background:url(../img/s-spirit.png)no-repeat 0 -623px;
+	display:none;
+}
+.side:hover .gou{
+	display: block;
+}
+
+.m-left .word{
+	font:12px/18px "宋体";
+	color: #404040;
+}
+.ico99{
+	width:27px;
+	height:18px;
+	background:url(../img/s-spirit.png)no-repeat 0 -413px;
+}
+.m-left .mor-ico{
+	width:7px;
+	height:4px;
+	background:url(../img/s-spirit.png)no-repeat 0 -101px;
+	margin:8px 0 0 3px;
+}
+.m-left .morbox{
+	width:44px;
+	float: right;
+	margin:0;
+}
+.mode-bottom .m-right{
+	width:96px;
+	height: 38px;
+}
+.m-right .merge{
+	height:22px;
+	border: 1px solid #dedede;
+	font:12px/22px"宋体";
+	color: #3d3d3d;
+	display:inline-block;
+	margin-top: 7px;
+	padding:0 5px;
+}
+.mt-left .text-menu{
+	width:102px;
+	height:156px;
+	border:1px solid #ededed;
+	background-color:white;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index:1;
+	padding-left:19px;
+	display: none;
+}
+.text-menu a{
+	display: block;
+	color:#666666;
+	font:12px/38px "宋体";
+}
+.text-menu a:hover{
+	color: orange;
+}
+.word:hover .text-menu{
+	display: block;
+}
+/*列表*/
+.tutu-list{
+	width:220px;
+	height:360px;
+	border:1px solid #ededed;
+	margin:0 17px 22px 0;
+}
+.content-left .tutu-list:hover{
+	border-color: orange;
+	border-radius: 40px;
+	overflow: hidden;
+	box-shadow: 0 0  8px  5px gainsboro;
+	transition: 2s;
+	
+}
+
+.tutu-list .tutulist-top{
+	width:220px;
+	height:220px;
+	overflow:hidden;
+	display: block;
+	position: relative;
+}
+.tutulist-top .list-brother{
+	width:220px;
+	height:38px;
+	position: absolute;
+	left:0;
+	bottom:-38px;
+	/*display: none;*/
+}
+.tutulist-top:hover .list-brother{
+	/*display: block;*/
+	transition:2s;
+	left:0;
+	bottom: 0;
+}
+.list-brother .trbox{
+	width:220px;
+	height:38px;
+	background-color: #ff4400;
+	opacity:.5;
+	position: absolute;
+	left:0;
+	bottom:0;
+}
+.list-brother .look{
+	width:140px;
+	height:38px;
+	position:absolute;
+	left:50%;
+	bottom:0;
+	margin-left:-70px;
+	font:bold 12px/38px "宋体";
+	color: white;
+	
+}
+.tutulist-top img{
+	width:220px;
+	height:220px;
+}
+.tutu-list .tutulist-bottom{
+	height:140px;
+	display: block;
+	padding:0 9px 0 11px;
+}
+.tutulist-bottom .two:hover{
+	text-decoration: underline;
+}
+.tutulist-bottom .shop-title:hover{
+	color: orange;
+}
+.tutulist-bottom .shop-title{
+	color: #3d3d3d;
+}
+.tutulist-bottom .name{
+	color: #888888;
+}
+.tutulist-bottom .one{
+	height:24px;
+	padding-top: 15px;
+}
+.one .one-left{
+	width:92px;
+	color: #ff4400;
+	font:bold 12px/14px arial,"宋体";
+}
+.one-left .cost{
+	margin:0 3px;
+}
+.one-left  .from{
+	padding:0 3px;
+	background-color:#ff4400;
+	color: white;
+	line-height:14px;
+}
+.one-right .number{
+	color: #888888;
+	font:9px/12px arial,"宋体"
+}
+.one-right .info{
+	color: #888888;
+	font:12px/12px arial,"宋体"
+}
+.tutulist-bottom .two{
+	height:36px;
+	font:12px/18px "宋体";
+	color: #3d3d3d;
+	margin:5px 0;
+}
+.two .or{
+	color: #ff4400;
+	margin-left: -6px;
+	display: inline-block;
+}
+.tutulist-bottom .three{
+	height:27px;
+	font:12px/12px arial,"宋体 ";
+	color: #888888;
+}
+.three .give-ico{
+	width:8px;
+	height:10px;
+	background:url(../img/s-spirit.png)no-repeat 0 -451px;
+	margin:1px 5px 0 0;
+}
+.three .name{
+	text-decoration:underline;
+}
+.three .place{
+	width:56px;
+}
+.place span{
+	margin-left: 4px;
+}
+.tutulist-bottom .four{
+	height:28px;
+}
+.four .skycat{
+	width:16px;
+	height:16px;
+	background:url(../img/s-spirit.png) no-repeat 0 -470px;
+	margin-left: 4px;
+}
+.four .wangwang{
+	width:16px;
+	height:16px;
+	background:url(../img/s-spirit.png) no-repeat 0 -496px;
+}
+.nomr{
+	margin-right: 0;
+}
+/*底部翻页*/
+.content-left .bottom{
+	height:77px;
+	padding-top:8px;
+}
+.bottom .bo-main{
+	height:76px;
+	margin-left: 145px;
+}
+.fanyilist a{
+	float: left;
+	border:1px solid #ededed;
+	color: black;
+	padding:0 14px;
+	font:12px/35px arial,"宋体";
+	margin-left: -1px;
+	position: relative;
+}
+.fanyilist a:hover{
+	border-color: orange;
+	color:orange;
+	z-index: 1;
+}
+
+.bo-main .all{
+	height:37px;
+	font:12px/37px "宋体";
+	color: #999999;
+	padding:0 10px;
+}
+.bo-main .form{
+	width:140px;
+	height:37px;
+	font:12px/37px arial,"宋体";
+	color: #999999;
+}
+.form .custom{
+	width:36px;
+	height:21px;
+	border:1px solid #ededed;
+	margin:7px 5px 0 5px;
+	padding-left: 7px;
+	color: #999999;
+}
+.form  .sure{
+	width:43px;
+	height: 23px;
+	border:1px solid #ededed;
+	margin:7px 0 0 6px;
+	background-color: white;
+}
+.fanyilist .top-ico{
+	width:6px;
+	height:9px;
+	background:url(../img/s-spirit.png) no-repeat 0 -555px;
+	margin:13px 4px 0 0px;
+}
+.fanyilist .top-page{
+	margin-right: 5px;
+}
+.fanyilist .diandian{
+	width:10px;
+	height:37px;
+	color: #666666;
+	padding:0 6px;
+}
+.fanyilist .bottom-ico{
+	width:6px;
+	height:9px;
+	background:url(../img/s-spirit.png) no-repeat 0 -580px;
+	margin:13px 0 0 4px;
+}
+/*内容右侧*/
+.s-box .content-right{
+	width:240px;
+}
+.content-right .co-head{
+	height:37px;
+	border-bottom: 1px solid #e8e8e8;
+	margin-bottom: 13px;
+}
+.co-head .head-title{
+	font:bold 16px/37px "宋体";
+	height:37px;
+	color: #555555;
+}
+.content-right .ad{
+	height:14px;
+	border:1px solid #ededed;
+	font: 10px/14px"宋体";
+	margin-top:11px;
+	padding:0 2px;
+	color: #dedede;	
+}
+.car-list a{
+	display: block;
+}
+.content-right .car-list{
+	height: 268px;
+	border:1px solid #e5e5e5;
+	margin-bottom: 10px;
+}
+.car-list .car-price{
+	width:238px;
+	height:240px;
+	overflow: hidden;
+	display: block;
+	position: relative;
+}
+.car-price img{
+	width:238px;
+	height:240px;
+}
+.car-price .car-brother{
+	width:238px;
+	height:75px;
+	position: absolute;
+	left:0;
+	bottom:-75px;
+}
+.car-price:hover .car-brother{
+	left:0;
+	bottom:0px;
+	transition:1s;
+}
+.car-brother .bg{
+	width:238px;
+	height:75px;
+	background-color:white;
+	opacity:.5;
+	position: absolute;
+	left:0;
+	bottom:0;
+}
+.car-brother .info{
+	width:228px;
+	height:69px;
+	position: absolute;
+	left:0;
+	bottom:0;
+	padding:6px 0 0 10px;
+}
+.info strong{
+	font:bold 12px/34px "宋体";
+	color:#555555;
+	height:34px;
+	display:block;
+}
+.info .as{
+	font:bold 12px/25px "宋体";
+	color: white; 
+	height:25px;
+}
+.as span{
+	padding:0 8px;
+	height:25px;
+	background-color: #ff4400;
+	margin-right:7px;
+	border-radius:8px;
+}
+.car-list .text-box{
+	height:28px;
+	display: block;
+	padding:0 10px;
+}
+.text-box .prtce-box{
+	color: #ff4400;
+	height:28px;
+	font:bold 14px/28px arial,"宋体";
+}
+.prtce-box span{
+	margin-right: 3px;
+}
+.nub-box span{
+	font:bold 12px/28px arial,"宋体";
+	color: #999999;
+}
+.nub-box .cor-b{
+	color: #555555;
+}
+.content-right .more{
+	height:25px;
+	margin:0 10px 10px 0;
+	width:230px;
+}
+.more .more-mark{
+	display: block;
+	height:25px;
+	padding:0 9px;
+	background-color: #ff4400;
+	color: white;
+	font:bold 12px/25px "宋体";
+	float: right;
+}
+.content-right .bo-header{
+	height:39px;
+	border:1px solid #e8e8e8;
+	background-color: #f2f2f2;
+}
+.bo-header .bo-title{
+	font:bold 16px/39px "宋体";
+	color: #fd4400;
+	margin-left: 12px;
+}
+.content-right .col-w{
+	background-color: white;
+	margin-right: 10px;
+}
+.content-right .shop-list{
+	width:220px;
+	height:375px;
+	border:1px solid #e8e8e8;
+	padding:10px 9px;
+	position: relative;
+}
+.shop-list a{
+	width:220px;
+	height:375px;
+	display: block;
+	overflow: hidden;
+}
+.shop-list img{
+	width:220px;
+	height:375px;
+}
+.content-right .border{
+	border:1px solid #e8e8e8;
+	height:35px;
+	padding:11px 8px 0 0;
+	width: 230px;
+	margin-top:-1px;
+}
+.shop-list .spe{
+	height:57px;
+	background-color: #f6f6f6;
+	position: absolute;
+	left:0;
+	bottom:-46px;
+	display: block;
+	width:222px;
+	padding:0 9px;
+	font:bold 12px/24px"宋体";
+	display: none;
+}
+.spe strong{
+	color:#3d3d3d;
+	height:24px;
+}
+.spe .name{
+	color: #999999;
+	text-decoration: underline;
+}
+.spe .cat-ico{
+	width: 16px;
+	height:16px;
+	background:url(../img/s-spirit.png)no-repeat 0 -472px;
+	margin-top: 2px;
+}
+.shop-list:hover .spe{
+	display: block;
+	z-index: 1;
+}
+.shop-list:hover{
+	background-color: #f6f6f6;
+}
+/*底部直通车*/
+.s-bottom-car{
+	margin:0 auto;
+	height:482px;
+}
+.s-bottom-car .nav{
+	height:35px;
+	background-color: #f5f5f5;
+	border:1px solid #ededed;
+	border-bottom:2px solid #dedede;
+}
+.nav a{
+	font:12px/35px arial,"宋体";
+	color: #000000;
+	float: left;
+	padding:0 12px;
+}
+.nav a:hover{
+	color: orange;
+}
+.nav .color-o{
+	color: #ff4400;
+	font-size: 14px;
+	font-weight: bold;
+	border-bottom:2px solid #ff4400;
+}
+.nav .nav-ad{
+	width:137px;
+	float: right;
+	height:25px;
+	padding-top:10px;
+}
+.nav-ad .adpicture{
+	height:14px;
+	border:1px solid #ededed;
+	font:12px/14px "宋体";
+	color: #dedede;
+	padding:0 2px;
+}
+.nav-ad .imhere{
+	height:16px;
+	font:bold 12px/16px "宋体";
+	color: #000000;
+	margin-left: 5px;
+	float: left;
+	padding:0;
+}
+.s-bottom-car .item{
+	height:392px;
+	border:1px solid #ededed;
+	border-top:none;
+	padding:10px 12px 0 0;
+}
+.s-bottom-car .tutu-list{
+	margin-left: 13px;
+	margin-right: 0;
+}
+/*底部搜索*/
+.bottom-search{
+	height: 54px;
+	width:716px;
+	margin:0 auto;
+}
+.bottom-search .search{
+	width:632px;
+	height:31px;
+	border:2px solid #ff5500;
+	background-color: white;
+	outline: none;
+}
+.bottom-search .button{
+	width:80px;
+	height:35px;
+	background-color: #ff4400;
+	color: white;
+	letter-spacing: 4px;
+	font:bold 14px/35px "宋体";
+	outline: none;
+}
+/*固定列表*/
+.side-item{
+	position: fixed;
+	right:5px;
+	bottom:55px;
+}
+.side-item .side-list{
+	width:46px;
+	height: 46px;
+	border:1px solid #d5d5d5;
+	margin-bottom: 10px;
+}
+.side-list .list-ico{
+	display: block;
+	width:46px;
+	height: 46px;
+	background:url(../img/s-spirit.png)no-repeat 0 -646px;
+}
+.side-list .list-two{
+	background:url(../img/s-spirit.png)no-repeat 0 -720px;
+}
+.side-list .list-three{
+	background:url(../img/s-spirit.png)no-repeat 0 -806px;
+}
+.side-list .list-four{
+	background:url(../img/s-spirit.png)no-repeat 0 -878px;
+}
+.side-item .list-one:hover{
+	background:url(../img/s-spirit.png)no-repeat 0 -944px;
+}
+.side-item .list-two:hover{
+	background:url(../img/s-spirit.png)no-repeat 0 -987px;
+}
+.side-item .list-three:hover{
+	background:url(../img/s-spirit.png)no-repeat 0 -1050px;
+}
+.side-item .list-four:hover{
+	background:url(../img/s-spirit.png)no-repeat 0 -1108px;
+}

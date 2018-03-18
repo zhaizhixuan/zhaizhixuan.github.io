@@ -1,0 +1,30 @@
+/*reset css*/
+body,h1,dl,dd,p{
+	margin:0;
+}
+a{
+	text-decoration: none;
+}
+img{
+	vertical-align:top;
+	border:none;
+}
+ul{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+input{
+	padding:0;
+	border:none;
+	margin:0;
+}
+h2,h3,h4,h5{
+	margin:0;
+}
+ol{
+	margin:0;
+	padding:0;
+	list-style: none;
+}
+

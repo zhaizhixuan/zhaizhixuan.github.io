@@ -1,0 +1,1644 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <style>
+
+        body,p{
+            margin: 0;
+        }
+        ul{
+            padding: 0;
+            margin:0;
+            list-style: none;
+        }
+        html,body{
+            height:100%;
+        }
+        a{
+            color:#333;
+            text-decoration: none;
+        }
+        a:hover{
+            text-decoration: underline;
+        }
+        body{
+            font-size:14px;
+            font-family: "微软雅黑";
+        }
+        /*头部*/
+        .header{
+            height:60px;
+            background: #F5F8FA;
+        }
+
+        .mod-act-group{
+            float: right;
+            margin-right:68px;
+        }
+        .mod-act-group .info {
+            float: left;
+            line-height: 60px;
+            font-size:14px;
+            text-align: center;
+            padding:0 5px;
+        }
+
+        .text-orange{
+            color:#FF9805;
+        }
+        .logo{
+            height:100%;
+            overflow: hidden;
+            float: left;
+        }
+        .logo a{
+            display: block;
+            background: url(img/logo.jpg);
+            width: 100px;
+            height:40px;
+            margin-top:10px;
+            margin-left:53px;
+        }
+
+        .mod-act{
+            float: left;
+            height:100%;
+            margin-left:105px;
+            margin-top:12px;
+            position: relative;
+        }
+        .mod-act a{
+            position: relative;
+            display: block;
+            width: 34px;
+            height: 34px;
+            border-radius: 2px;
+            text-align: center;
+            background: #E9EEF3;
+            border: 1px solid transparent;
+            font-size:14px;
+            line-height: 34px;
+            text-align: center;
+        }
+        .mod-act a:hover{
+            border-color: #ccc;
+        }
+
+        .mod-search{
+            height:36px;
+            float: left;
+            margin-left:16px;
+            margin-top:12px;
+            position: relative;
+            border: 1px solid transparent;
+            transition: 0.5s;
+        }
+        .mod-search input{
+            height:34px;
+            width:200px;
+            border:1px solid transparent;
+            padding:0 40px 0 10px;
+            background: #E9EEF3;
+        }
+        .mod-search a{
+            position: absolute;
+            width:36px;
+            height:36px;
+            text-align: center;
+            line-height: 36px;
+            right:0;
+            top:0;
+        }
+        .mod-search:hover{
+            border:1px solid #E9cfF1;
+        }
+        /*主体*/
+        .main{
+            /*background: orchid;*/
+            position: absolute;
+            top:60px;
+            left:0;
+            right:0;
+            bottom:0;
+        }
+
+        .main .side{
+            height:100%;
+            position: absolute;
+            width:200px;
+            top:0;
+            left:0;
+        }
+        .main .content{
+            padding:0 0 0 200px;
+            position: relative;
+            height:100%;
+        }
+
+        .side-heading .ava{
+            display: block;
+            width: 58px;
+            height: 58px;
+            margin: auto;
+            overflow: hidden;
+            border-radius: 29px;
+            margin-top:16px;
+        }
+        .side-heading .ava img{
+            width: 100%;
+            height: 100%;
+        }
+        .side-body{
+            margin-top:16px;
+            overflow: auto;
+            height:400px;
+        }
+        .side-body .btns{
+            text-align: center;
+        }
+        .side-body .btns .btn{
+            display: inline-block;
+            text-align: center;
+            border-radius:2px;
+            width:80px;
+            height:25px;
+            line-height: 25px;
+            color:#00A4FF;
+            border:1px solid #00A4FF;
+        }
+        .side-body .btns .btn:hover{
+            background-color:rgba(59,147,255,.1);
+            text-decoration: none;
+        }
+        .side-body ul{
+            width:100px;
+            border-bottom:1px solid #ccc;
+            margin:16px auto -1px;
+            list-style: none;
+
+        }
+        .side-body ul li{
+
+        }
+        .side-body li a{
+            display: block;
+            width:90px;
+            margin-left:-40px;
+            height:38px;
+            line-height: 38px;
+            border-left:4px solid transparent;
+            padding-left:36px;
+            padding-right:50px;
+            text-align: center;
+            text-align: left;
+            word-spacing: 15px;
+        }
+        .side-body li a:hover{
+            text-decoration: none;
+            background-color:rgba(59,147,255,.1) ;
+        }
+        .side-body li a.active,
+        .side-body li a.active:hover{
+            color:#0097EB;
+            text-decoration: none;
+            border-left:4px solid #0097EB;
+            background-color:transparent;
+        }
+
+        .main .center {
+            padding:0 70px 0 30px;
+            height:100%;
+        }
+
+        .main .center .crumbs{
+            height:60px;
+            line-height: 60px;
+            font-family: "Comic Sans MS";
+
+        }
+        .main .center .crumbs .crumbs-btn{
+            float: left;
+            height:100%;
+        }
+
+        .main .center .crumbs .btns{
+            float: right;
+        }
+        .main .center .crumbs .btns .btn, .addbtn{
+            display: inline-block;
+            padding:5px 20px;
+            border:1px solid #ccc;
+            line-height: normal;
+            border-radius:2px;
+            margin:0 5px;
+        }
+        .main .center .crumbs .btns .btn:hover{
+            text-decoration: none;
+            background-color:rgba(59,147,255,.1);
+        }
+
+        .main .center .crumbs .btns .btn-primary{
+            background-color: #00A4FF;
+            color:#fff;
+            border-color:transparent;
+        }
+
+        .main .center .crumbs .btns .btn-primary:hover{
+            background-color:#0097EA;
+        }
+
+        .list {
+            position:relative;
+        }
+
+        .list-item{
+            /*background-color: red;*/
+            height:40px;
+            line-height: 40px;
+            text-align: left;
+            border-bottom:1px solid #ccc;
+        }
+        .list-item .name{
+            position: relative;
+            padding-right:300px;
+        }
+        .list-item .edit-time{
+            position: absolute;
+            right:150px;
+            top:0;
+            width:150px;
+        }
+        .list-item .file-size{
+            position: absolute;
+            right:0px;
+            top:0;
+            width:150px;
+        }
+
+        .list-con{
+            padding-left:100px;
+            height:50px;
+            line-height:50px;
+            position:relative;
+        }
+
+        .list-con a{
+            display: block;
+            margin-left:-100px;
+        }
+        .list-con a:hover{
+            text-decoration: none;
+        }
+
+        .list-con .check-box,
+        .list-con .file{
+            float: left;
+            width:50px;
+            text-align: center;
+            font-size:18px;
+        }
+
+        .list-con .check-box{
+            width:30px;
+            display: none;
+            position: absolute;
+            left:-10px;
+        }
+        .list-con .file{
+            width:70px;
+            font-size:28px;
+            color:#4FB2FC;
+        }
+
+
+        .thumb .list-con{
+            float: left;
+            border-color:transparent;
+            width:114px;
+            height:130px;
+            padding:0;
+            margin:0;
+            position: relative;
+        }
+        .thumb .list-con a{
+            margin:0;
+            padding-bottom:20px;
+        }
+        .thumb .list-header{
+            display: none;
+        }
+        /*.list-con a:hover .check-box{*/
+            /*display: block;*/
+        /*}*/
+        /*.thumb .list-con .check-box{*/
+            /*position: absolute;*/
+            /*top:-8px;*/
+            /*left:-2px;*/
+            /*display: none;*/
+            /*color:#ccc;*/
+        /*}*/
+        .thumb .list-con .name{
+            padding:0;
+            text-align: center;
+            line-height: 20px;
+            margin-left:20px;
+        }
+        .thumb .list-con .file{
+            width:100%;
+            margin-top:10px;
+            height:70px;
+            line-height: 70px;
+            text-align: center;
+            font-size:56px;
+        }
+
+        .thumb .list-con .file-size,
+        .thumb .list-con .edit-time{
+            display: none;
+        }
+
+        .all{
+            display: none;
+        }
+
+        .logo a{
+            text-indent: -9999px;
+        }
+
+
+        ::-webkit-scrollbar {
+            width: 16px;
+            height: 10px;
+            overflow: visible;
+        }
+        ::-webkit-scrollbar-button {
+            width: 0;
+            height: 0;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #d8dce5;
+            border: solid transparent;
+            border-width: 1px 0 1px 8px;
+            background-clip: padding-box;
+        }
+
+        .icon{
+            font-size:18px;
+        }
+
+        /*清浮动*/
+        .clearFix{
+            display: block;
+        }
+        .clearFix:before{
+            display: block;
+            content:'';
+        }
+        .clearFix:after{
+            display: block;
+            content:'';
+            clear:both;
+        }
+        /*弹窗*/
+        .taskcontent{
+            position:absolute;
+            z-index: 2;
+            transform: scale(0);
+            transform-origin: left top;
+            left:0;
+            top:35px;
+            width:500px;
+            height:400px;
+            background-color: #fff;
+            border:1px solid skyblue;
+            border-top:5px solid blue;
+            border-top-left-radius: 3px;
+            border-top-right-radius: 3px;
+            transition: 0.3s;
+
+        }
+        .taskcontent header{
+            font-size:20px;
+            color:#000;
+            letter-spacing: 2px;
+            margin:30px 30px 0;
+        }
+
+        .tasklist{
+            height:60px;
+            padding: 0 30px;
+            border-bottom: 1px solid skyblue;
+            position:relative;
+        }
+        .line{
+            color:skyblue;
+            height:3px;
+            background-color:blue;
+            position:absolute;
+            top:57px;
+            left:30px;
+        }
+        .tasklist .tasktitle{
+            margin-right:20px;
+            line-height:56px;
+            cursor: pointer;
+            float: left;
+        }
+        .myown{
+            position:relative;
+        }
+        .curstommes{
+            text-align: left;
+            position:absolute;
+            z-index: 5;
+            right:0;
+            top:40px;
+            padding:30px 20px 20px;
+            width:200px;
+            height:200px;
+            background-color: #fff;
+            border:1px solid skyblue;
+            line-height:30px;
+            display: none;
+        }
+        .size{
+            height:5px;
+            border:1px solid #000;
+            border-radius: 3px;
+        }
+        .sizeline{
+            height:5px;
+            width:10px;
+            background-color: blue;
+        }
+        .sizeplus,.lv{
+            font-size:12px;
+            color:#999;
+        }
+        .cname{
+            font-size:16px;
+            line-height:25px;
+        }
+        .sizeplus{
+            line-height: 20px;
+        }
+        .sizebox{
+            padding-bottom: 10px;
+            margin-bottom: 10px;
+            border-bottom: 1px solid #b9def0;
+        }
+        .sico{
+            transition:.3s;
+        }
+
+        .btnbox, .addbox{
+            opacity: 0;
+            height:0;
+            position:absolute;
+            background-color: #fff;
+            right: 5px;
+            top:45px;
+            z-index: 4;
+            border:1px solid #b9def0;
+            border-radius: 3px;
+            padding:10px 0 0;
+            line-height: 30px;
+
+            text-indent: 15px;
+            display: none;
+        }
+        .btnitem{
+            width:100px;
+            padding:0 30px;
+        }
+        .addbtn .btnitem{
+            color:#000;
+            font-family: "微软雅黑";
+        }
+        .listleft, .listright{
+            position:relative;
+            float:left;
+        }
+        .btnitem:hover{
+            background-color: skyblue;
+        }
+        .btnboxtop{
+            border-bottom: 1px solid #b9def0;
+            padding-bottom:10px;
+        }
+        .btnboxbottom{
+            padding-top:10px;
+        }
+        #tool{
+            float: left;
+            font-size:0;
+            margin-top:7px;
+            display: none;
+        }
+        #tool a{
+            margin-left: 0;
+            font-size:16px;
+            margin-right:-1px;
+        }
+        .list-content .check-box i{
+            position:absolute;
+            left:10px;
+            top:15px;
+            z-index: 5;
+        }
+        /*任务列表样式*/
+        .mod-act{
+            position: relative;
+            z-index: 10;
+        }
+        #_manager{
+            display: none;
+            width:200px;
+            height:200px;
+            border:1px solid #ccc;
+            box-shadow: 0 0 4px #ccc;
+            background-color: #fff;
+            border-top:4px solid #0066FF;
+            position: absolute;
+            left:0;
+            top:34px;
+        }
+        #_manager ul{
+            list-style: none;
+            padding:0 30px;
+            border-bottom:1px solid #ccc;
+            position: relative;
+        }
+        #_manager ul li{
+            float: left;
+            font-size:14px;
+            margin-right:10px;
+            line-height: 30px;
+            height:30px;
+        }
+        #_manager ul li.active{
+            color:#0066FF;
+        }
+        #_manager ul li.line{
+            width:100px;
+            background-color: #0066FF;
+            height:2px;
+            position: absolute;
+            bottom:-1px;
+            left:30px;
+        }
+
+        #_manager h5{
+            line-height: 60px;
+            padding:0 30px;
+            font-size:24px;
+        }
+
+
+        .mark{
+            position: absolute;
+            border:1px solid #000;
+            background-color: rgba(0,0,0,.2);
+            display: none;
+        }
+        .move{
+            position:absolute;
+            border:1px solid #000;
+            background-color: rgba(0,0,0,.2);
+        }
+        .menubox{
+            position:absolute;
+            left:0;
+            top:0;
+            border:1px solid skyblue;
+            padding:10px 20px;
+            line-height:30px;
+            cursor: pointer;
+            color:#000;
+            opacity: 0;
+            transform: scale(0);
+            transform-origin: left top;
+            z-index: 10;
+            background-color: #fff;
+        }
+        .menulist{
+            margin-right: 50px;
+        }
+        .out{
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            left:0;
+            background-color: rgba(0,0,0,.3);
+            z-index: 10;
+            display: none;
+        }
+        .sure{
+            display: inline-block;
+            padding:0 30px;
+            background-color: skyblue;
+            color:#fff;
+            border-radius: 5px;
+            float:right;
+            margin-top:80px;
+            cursor: pointer;
+        }
+        .cancle{
+            display: inline-block;
+            padding:0 30px;
+            background-color: #fff;
+            border:1px solid skyblue;
+            color:#000;
+            border-radius: 5px;
+            float:right;
+            margin: 80px 20px 0;
+            cursor: pointer;
+        }
+        .no{
+            position:absolute;
+            top:0;
+            right:10px;
+            font-size: 30px;
+            cursor: pointer;
+        }
+        .suredel header{
+            height: 50px;
+            line-height: 50px;
+            border-bottom: 1px solid #999;
+            padding:0 20px;
+        }
+        .suredel p{
+            padding:0 100px 0;
+            margin-top:50px;
+        }
+        .suredel{
+            width:400px;
+            height:300px;
+            border:1px solid #00CCFF;
+            position:absolute;
+            background-color: #fff;
+            border-radius: 10px;
+            line-height:30px;
+            transform: scale(0);
+            transition: 0.5s;
+
+        }
+        #move-to{
+            position:absolute;
+            background-color: #000;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+<!--头部-->
+<div class="header clearFix">
+    <div class="mod-act-group">
+        <div class="info text-orange">开会员最多送一年</div>
+        <div class="info"><a href="#">下载客户端</a></div>
+        <div class="info myown">
+            <a href="#" class="sbtn">翟芷萱
+                <i class="fa fa-sort-desc sico">
+
+                </i>
+            </a>
+            <div class="curstommes">
+                <p class="cname">菜鸟传奇</p>
+                <div class="sizebox">
+                    <p class="lv">尊贵超级会员</p>
+                    <div class = "sizeplus">容量5G/35G</div>
+                    <div class="size">
+                        <div class="sizeline"></div>
+                    </div>
+                </div>
+                <ul class="curlist">
+                    <li class="curitem">帮助与反馈</li>
+                    <li class="curitem">安全与隐私</li>
+                    <li class="curitem">退出登录</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="logo"><a href="#">微云</a></div>
+    <div class="mod-act">
+        <a class="mod-btn" href="javascript:;">
+            <i class="fa fa-download"></i>
+        </a>
+        <div class="taskcontent">
+            <header>任务列表</header>
+            <div class="taskmes">
+                <ul class="tasklist">
+                    <li class="tasktitle fl">进行中(0)</li>
+                    <li class="tasktitle fl">已完成</li>
+                    <li class="line"></li>
+                </ul>
+            </div>
+
+        </div>
+    </div>
+    <div class="mod-search">
+        <input type="text" value="" placeholder="搜索全部微云" class="text">
+        <a href="#"><i class="fa fa-search"></i></a>
+    </div>
+</div>
+<!--主体-->
+<div class="main">
+    <div class="content">
+        <div class="center">
+            <!--面包屑-->
+            <div class="crumbs">
+                <div class="btns">
+                    <div id="tool">
+                        <a href="#" class="btn">下载</a>
+                        <a href="#" class="btn">分享</a>
+                        <a href="#" class="btn" id="dele-file">删除</a>
+                        <a id="rename" href="#" class="btn">重命名</a>
+                        <a id="move-to-btn" href="#" class="btn">移动到</a>
+                    </div>
+                    <div class="listleft">
+                        <a href="#" class="btn">
+                            <i class="fa fa-bars"></i>
+                            <i class="fa fa-sort-down"></i>
+                        </a>
+                        <ul class="btnbox">
+                            <li class="btnboxtop">
+                                <div class="btnitem">列表</div>
+                                <div class="btnitem">缩略图</div>
+                            </li>
+                            <li class="btnboxbottom">
+                                <div class="btnitem">文件名</div>
+                                <div class="btnitem">修改时间</div>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="listright">
+                        <a href="#" class="addbtn btn-primary">
+                            <i class="fa fa-plus"></i>
+                            <span>添加</span>
+                        </a>
+                        <ul class="addbox">
+                            <li class="btnitem creatfile">新建文件夹</li>
+                            <li class="btnitem">222</li>
+                            <li class="btnitem">333</li>
+                            <li class="btnitem">444</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="crumbs-btn">
+                    <span class="icon all"><i class="fa fa-circle-o "></i> | </span><span class="crumbs-box"></span>
+                </div>
+            </div>
+
+            <div class="list clearFix">
+
+                <div class="list-item list-header">
+                    <div class="name">
+
+                        <div style="">名称 <i class="fa fa-sort-amount-desc"></i></div>
+
+                        <div class="edit-time">修改时间 <i class="fa fa-sort-amount-desc"></i></div>
+                        <div class="file-size">大小</div>
+                    </div>
+
+
+                </div>
+                <div class="list-content">
+
+                </div>
+                <div class="menubox">
+                    <ul class="menulist">
+                        <li class="menuitem">刷新</li>
+                        <li class="menuitem">视图</li>
+                        <li class="menuitem">上传文件</li>
+                        <li class="menuitem">上传文件夹</li>
+                        <li class="menuitem newcreat">新建文件夹</li>
+                    </ul>
+                </div>
+
+
+            </div>
+
+
+
+        </div>
+        <!--左翅膀-->
+        <div class="side">
+            <div class="side-heading">
+                <a href="#" class="ava"><img src="img/g.jpg" alt=""></a>
+            </div>
+            <div class="side-body">
+                <div class="btns">
+                    <a class="btn" href="#">开通</a>
+                </div>
+                <div class="menuList">
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+<div class="out">
+    <div class="suredel">
+        <header>删除文件</header>
+        <p>确定删除所选文件夹?</p>
+        <span class="cancle">取消</span>
+        <span class="sure">确定</span>
+
+        <div class="no">x</div>
+    </div>
+</div>
+<div id="move-to">
+</div>
+<script id="commonjs" src="commom.js"></script>
+<script src="js/data.js"></script>
+<script src="js/creatcontent.js"></script>
+<script src="js/common.js"></script>
+<script src="js/headjs.js"></script>
+<script>
+    //生成侧边栏
+    var menuBox = document.querySelector('.menuList');
+    // 生成左侧菜单
+    creatSide(menu,menuBox);
+    // 页面默认显示menu的内容
+    var seach = editSearch();
+    // 页面默认
+    if(!seach.dir){
+        // 页面默认seach值
+        seach.dir = 'zj';
+    }
+    // 动态设置seach的dir值
+    var pageResize = seach.dir;
+    // 获取面包屑父级
+    var breadBox = document.querySelector('.crumbs-box');
+    // 通过封装函数填补对应seachurl的内容
+
+    breadBox.innerHTML = breadXue(pageResize,content);
+    // 缩略图与列表图切换
+    var bLis = document.querySelectorAll('.btnboxtop .btnitem');
+    var divs = document.querySelector('.list');
+    bLis[1].style.color = 'blue';
+    bLis[0].state = true;
+//    bLis[1].state = false;
+//    bLis[0].onclick = function(){
+//        this.style.color = 'blue';
+//
+//        bLis[1].style.color = '';
+//
+//        divs.className = 'list clearfix';
+//
+//        bLis[1].state = false;
+//
+//        this.state = true;
+//    };
+//    bLis[1].onclick = function(){
+//        this.style.color = 'blue';
+//        bLis[0].style.color = '';
+//        divs.className = 'list clearfix thumb';
+//        bLis[0].state = false;
+//
+//        this.state = true;
+//    };
+
+    // 获取面包屑导航中需要点击的内容
+    var breadA = breadBox.querySelectorAll('a');
+    // for 循环添加点击事件
+    for(var i=0;i<breadA.length;i++){
+
+        breadA[i].onclick = function(){
+            if(bLis[0].state){
+                divs.className = 'list clearfix';
+            }else{
+                divs.className = 'list clearfix thumb';
+            }
+            // 拆分seach
+            var nowArr = pageResize.split('_');
+            // 通过seach的mark值动态的裁切数组
+            nowArr = nowArr.slice(0,this.getAttribute('mark')*1+1);
+            // 将数组转换成seach url
+            seach = editSearch('dir',nowArr.join('_'));
+
+        }
+    }
+
+
+    // 生成显示文件夹
+
+    var contentBox = document.querySelector('.list-content');
+    // 生成页面内容。 seachUrl seach值，json数据，
+    creatContent(seachUrl(pageResize,content),contentBox);
+
+    // 标记左侧导航栏
+    var menuList = document.querySelectorAll('.menuList li a');
+    var xmark = pageResize.split('_');
+
+    var sitedata = sideMark(menuList,xmark[0]);
+
+    // 左侧栏点击事件
+    for(var i =0;i<menuList.length;i++){
+
+        menuList[i].onclick = function(ev){
+            if(bLis[0].state){
+
+                divs.className = 'list clearfix';
+
+            }else{
+
+                divs.className = 'list clearfix thumb';
+
+            }
+
+            var ev = ev||event;
+
+            ev.preventDefault();
+
+            // 通过mark值动态的改变seach值
+
+            seach = editSearch('dir',this.getAttribute('mark'));
+
+
+
+//            creatContent(currRessize,contentBox);
+//
+//            aClick();
+//
+//            sitedata.className = '';
+//
+//            sitedata = sideMark(menuList,this.getAttribute('mark'));
+
+        }
+    };
+    aClick();
+    // 元素内部点击事件
+    function aClick(){
+
+        var all = document.querySelectorAll('.list-item a');
+
+        for(var i=0;i<all.length;i++){
+
+            all[i].onclick = function(){
+                // 通过mark值动态的改变seach值
+                seach = editSearch('dir',pageResize+'_'+this.getAttribute('mark'));
+
+//                creatContent(currRessize,contentBox);
+//
+//
+//                aClick();
+
+            }
+        }
+    }
+
+    // 页面交互
+    // 任务栏
+    var btns = document.querySelector('.mod-btn');
+
+    btns.state = false;
+
+    var taskBox = document.querySelector('.taskcontent');
+
+    headTskBtn(btns,taskBox);
+    // 搜索栏
+    var inputs = document.querySelector('.text');
+
+    var seach = document.querySelector('.seach');
+
+    headSeach(inputs,seach);
+
+    // 身份栏
+    var sBtn = document.querySelector('.sbtn');
+
+    var sIco = document.querySelector('.sico');
+
+    var curmes = document.querySelector('.curstommes');
+    sBtn.state = false;
+    headMes(sBtn,sIco,curmes);
+
+    //列表排序栏
+    var listBtn = document.querySelector('.listleft .btn');
+    var btnBox = document.querySelector('.listleft .btnbox');
+    listBtn.state = false;
+    list(listBtn,btnBox);
+    // 添加栏
+    var addBtn = document.querySelector('.addbtn');
+    var addBox = document.querySelector('.listright .addbox');
+    list(addBtn,addBox);
+    addBtn.state = false;
+    function list(obj,obj1){
+
+        obj.onclick = function () {
+
+            obj1.style.display = 'block';
+            var h = obj1.scrollHeight;
+            if(!obj.state){
+
+
+                MTween({
+                    obj:obj1,
+                    attrs:{
+                        opacity:1,
+                        height:h+'px'
+                    },
+                    duration:100,
+                    callBack:function(){
+
+                        obj.state = true;
+
+                    }
+                });
+            }else {
+                MTween({
+                    obj:obj1,
+                    attrs:{
+                        opacity:0,
+                        height:10+'px'
+                    },
+                    begins:{
+                        opacity:1,
+                        height:h+'px'
+                    },
+                    duration:100,
+                    callBack:function(){
+                        obj.state = false;
+                        obj1.style.display = 'none';
+                    }
+                });
+            }
+
+
+        };
+//        obj1.onclick = function(ev){
+//            var ev = ev||event;
+//            ev.cancelable = true;
+//            ev.stopPropagation();
+//        }
+    }
+    // 界面默认尺寸
+    pageSize();
+
+    function pageSize(){
+        var side = document.querySelector('.side-body');
+
+        var content = document.querySelector('.list');
+
+        var delBox = document.querySelector('.suredel');
+
+        var ts = getOffset(side,'offsetTop');
+
+        var cs = getOffset(content,'offsetTop');
+
+        var moveBox = document.querySelector('#move-to');
+
+        var h = window.innerHeight;
+
+        var w = window.innerWidth;
+        moveBox.style.left = (w-moveBox.offsetWidth)/2 +'px';
+        moveBox.style.top = (h-moveBox.offsetHeight)/2 +'px';
+        side.style.height = h-ts+'px';
+
+        content.style.height = h-cs+'px';
+
+        delBox.style.left = (w-delBox.offsetWidth)/2 +'px';
+
+        delBox.style.top = (h-delBox.offsetHeight)/2 +'px';
+
+        window.onresize = function(){
+            var side = document.querySelector('.side-body');
+            var content = document.querySelector('.list');
+            var ts = getOffset(side,'offsetTop');
+            var cs = getOffset(content,'offsetTop');
+            var h = window.innerHeight;
+            var w = window.innerWidth;
+            delBox.style.left = (w-delBox.offsetWidth)/2 +'px';
+
+            delBox.style.top = (h-delBox.offsetHeight)/2 +'px';
+
+            side.style.height = h-ts+'px';
+            content.style.height = h-cs+'px';
+            moveBox.style.left = (w-moveBox.offsetWidth)/2 +'px';
+            moveBox.style.top = (h-moveBox.offsetHeight)/2 +'px';
+        }
+    }
+
+    // 存储与删除选中的元素
+    var saveElement = [];
+
+    function saveN(obj){
+
+        for(var i=0;i<saveElement.length;i++){
+
+            if(obj==saveElement[i]){
+
+                return;
+
+            }
+        }
+
+        saveElement.push(obj);
+
+    }
+    function delN(obj){
+        for(var i=0;i<saveElement.length;i++){
+            if(obj==saveElement[i]){
+                saveElement.splice(i,1);
+                break;
+            }
+        }
+    }
+    var radioBtn = document.querySelectorAll('.list-content .check-box');
+    var hoverBox = document.querySelectorAll('.list-content .list-item');
+    var allBtn = document.querySelector('.all');
+
+    var tools = document.querySelector('#tool');
+    // 单选与全选
+    checkAll();
+    var num = 0;
+
+    function checkAll(){
+        saveElement = [];
+        radioBtn = document.querySelectorAll('.list-content .check-box');
+        hoverBox = document.querySelectorAll('.list-content .list-item');
+
+        //重命名按钮
+        var renameBtn = document.querySelector('#rename');
+
+        // 右侧父级
+        var list = document.querySelector('.list');
+        allBtn.state = false;//为全选
+        dBox({
+            obj:list,
+            fn:function(c){
+                boom(c,document.querySelectorAll('.list-content .list-item'),function(o){
+                    //选中
+                    var checkBox = o.querySelector('.check-box');
+
+                    var i = checkBox.querySelector('i');
+
+                    checkBox.style.color = 'blue';
+
+                    checkBox.style.display = 'block';
+
+                    o.style.backgroundColor = 'rgba(59,147,255,.1)';
+
+                    i.className = 'fa fa-check-circle-o';
+
+                    checkBox.parentNode.className = 'active';
+
+                    allBtn.style.display = 'inline';
+
+                    saveN(checkBox);
+
+                    num = saveElement.length;
+                    //检查是否全选
+                    if(num==radioBtn.length){
+                        allBtn.style.color = 'blue';
+                        allBtn.children[0].className = 'fa fa-check-circle-o';
+                        allBtn.state = true;
+                    }else{
+                        allBtn.style.color = '';
+                        allBtn.children[0].className = 'fa fa-circle-o';
+                        allBtn.state = false;
+                    }
+
+                    //处理整个工具条的变化
+                    if(num<=0){
+                        tool.style.display = 'none';
+                    }else{
+                        tool.style.display = 'block';
+                    }
+
+                    //处理重命名按钮变化
+                    if(num<=1){
+                        renameBtn.style.display = 'inline-block';
+                    }else{
+                        renameBtn.style.display = 'none';
+                    }
+                },function(o){
+                    //取消选中
+                    var checkBox = o.querySelector('.check-box');
+
+                    var i = checkBox.querySelector('i');
+
+                    checkBox.style.display = 'none';
+
+                    checkBox.parentNode.parentNode.style.backgroundColor = '';
+
+                    i.className = 'fa fa-circle-o';
+
+                    i.style.color = '';
+
+                    checkBox.parentNode.className = '';
+
+                    delN(checkBox);//删除取消选中的
+
+                    num = saveElement.length;
+
+                    //检查是否全选
+                    if(num==radioBtn.length){
+                        allBtn.style.color = 'blue';
+
+                        allBtn.children[0].className = 'fa fa-check-circle-o';
+
+                        allBtn.state = true;
+                    }else{
+                        allBtn.style.color = '';
+                        allBtn.children[0].className = 'fa fa-circle-o';
+                        allBtn.state = false;
+                    }
+
+                    //处理整个工具条的变化
+                    if(num<=0){
+                        tool.style.display = 'none';
+                        allBtn.style.display = 'none';
+                    }else{
+                        tool.style.display = 'block';
+                    }
+
+                    //处理重命名按钮变化
+                    if(num<=1){
+                        renameBtn.style.display = 'inline-block';
+                    }else{
+                        renameBtn.style.display = 'none';
+                    }
+                });
+            }
+        });
+
+
+        for(var i=0;i<radioBtn.length;i++){
+            //hover效果
+            hoverBox[i].index = i;
+            hoverBox[i].onmouseover = function(){
+
+                radioBtn[this.index].style.display= 'block';
+
+                this.style.backgroundColor='rgba(59,147,255,.1)';
+
+                radioBtn[this.index].children[0].style.color = 'blue';
+            };
+            hoverBox[i].onmouseout = function(){
+                if(this.children[0].className != 'active'){
+
+                    radioBtn[this.index].children[0].style.color = '';
+
+                    radioBtn[this.index].style.display= 'none';
+
+                    this.style.backgroundColor='';
+                }
+
+            };
+
+            radioBtn[i].onclick = function(ev){
+                radioBtn = document.querySelectorAll('.list-content .check-box');
+
+                var ev = ev||event;
+
+                ev.cancelable = true;
+
+                ev.stopPropagation();
+
+                var i = this.children[0];
+                if(this.parentNode.className == 'active'){
+                    //取消选中
+                    this.style.color = '';
+
+                    i.className = 'fa fa-circle-o';
+
+                    this.parentNode.className = '';
+
+                    num--;
+
+                    delN(this);
+
+                    if(num==0){
+
+                        allBtn.style.display = 'none';
+
+                    }
+
+                }else{
+                    //选中
+
+                    this.style.color = 'blue';
+
+                    i.className = 'fa fa-check-circle-o';
+
+                    this.parentNode.className = 'active';
+                    saveN(this);
+
+
+                    num++;
+
+                    allBtn.style.display = 'inline';
+
+                }
+                //检查是否全选
+                if(num==radioBtn.length){
+                    allBtn.style.color = 'blue';
+                    allBtn.children[0].className = 'fa fa-check-circle-o';
+                    allBtn.state = true;
+                }else{
+                    allBtn.style.color = '';
+                    allBtn.children[0].className = 'fa fa-circle-o';
+                    allBtn.state = false;
+                }
+                //处理重命名按钮变化
+                if(num<=1){
+
+                    renameBtn.style.display = 'inline-block';
+
+                }else{
+
+                    renameBtn.style.display = 'none';
+
+                }
+                //处理整个工具条的变化
+                if(num<=0){
+                    tool.style.display = 'none';
+                }else{
+                    tool.style.display = 'block';
+                }
+
+            };
+        };
+
+        allBtn.onclick = function(){
+            saveElement=[];
+            if(this.state){
+                this.style.display = 'none';
+                tool.style.display = 'none';
+                for(var i =0;i<radioBtn.length;i++){
+                    radioBtn[i].parentNode.parentNode.style.backgroundColor='';
+                    radioBtn[i].querySelector('i').className='fa fa-circle-o';
+                    radioBtn[i].style.display = 'none';
+                    radioBtn[i].parentNode.className = '';
+                    delN(radioBtn[i]);
+                    console.log(saveElement);
+                    num=0;
+
+                    this.state = false;
+                }
+            }else{
+                this.style.display = 'inline';
+                this.style.color = 'blue';
+                renameBtn.style.display = "none";
+                this.children[0].className = 'fa fa-check-circle-o';
+
+                tool.style.display = 'block';
+                for(var i =0;i<radioBtn.length;i++){
+                    radioBtn[i].parentNode.parentNode.style.backgroundColor='rgba(59,147,255,.1)';
+                    radioBtn[i].querySelector('i').className='fa fa-check-circle-o';
+                    radioBtn[i].querySelector('i').style.color='blue';
+                    radioBtn[i].style.display = 'block';
+                    radioBtn[i].parentNode.className = 'active';
+                    saveN(radioBtn[i]);
+                    console.log(saveElement);
+
+                    num = radioBtn.length;
+
+                    this.state = true;
+                }
+
+            }
+        }
+
+
+    }
+    // 新建文件夹
+    var fileBtn = document.querySelector('.addbox .creatfile');
+
+    creatFile(fileBtn);
+    function creatFile(obj){
+        obj.onclick = function(){
+            //点击按钮在json中添加一个内容
+            var date = new Date();
+            var json = {
+                title:'新建文件夹',
+                name:'',
+                time:date.getFullYear()+'-'+(date.getMonth()+1)+'-'+date.getDate(),
+                fileSize:0
+            };
+            //创建模板
+            var content_html = document.createElement('div');
+            content_html.className = 'list-item list-con';
+            content_html.innerHTML = '<a href="javascript:void(0);"  mark="'+i+' key="'+json.name+'">'+
+                    '<div class="check-box"><i class="fa fa-circle-o"></i></div>'+
+                    '<div class="file"><i class="fa fa-folder"></i></div>'+
+                    '<div class="name">'+
+                    '<div style="">' +
+                    '<input type="text" value="'+json.title+'">' +
+                    '</div>'+
+                    '<div class="edit-time">'+json.time+'</div>'+
+                    '<div class="file-size">'+(json.fileSize||'-')+'</div>'+
+                    '</div>'+
+                    '</a>';
+            contentBox.insertBefore(content_html,contentBox.firstElementChild);
+
+            //选中input内容
+            var input = content_html.querySelector('input');
+            input.select();
+            input.onblur = function(){
+
+                json.title = this.value;
+
+                allBtn.style.display = 'none';
+
+                allBtn. state = false;
+
+                num = 0;
+
+                tools.style.display = 'none';
+
+                seachUrl(pageResize,content).unshift(json);
+
+                creatContent(seachUrl(pageResize,content),contentBox);
+
+                aClick();
+
+                checkAll();
+            };
+        };
+    }
+    // 右键菜单事件
+    rightClick();
+    function rightClick(){
+        var list = document.querySelector('.list');
+        var menu = document.querySelector('.menubox');
+        var x1 = getOffset(menu,'offsetLeft');
+        var y1 = getOffset(menu,'offsetTop');
+        list.oncontextmenu = function(){
+            var ev = ev||event;
+            ev.preventDefault();
+            menu.style.opacity = 1;
+            menu.style.transform = 'scale(1)';
+            var x = ev.clientX;
+            var y = ev.clientY;
+            menu.style.left = x-x1 + 'px';
+            menu.style.top = y-y1 + 'px';
+
+        }
+        var rCreat = document.querySelector('.newcreat');
+        creatFile(rCreat);
+
+    }
+    // 删除文件夹
+    var delFileBtn = document.querySelector('#dele-file');
+    delFile();
+
+    function delFile(){
+        var out = document.querySelector('.out');
+        delFileBtn.onclick = function(){
+            out.style.display = 'block';
+            pageSize();
+            var sureBox = document.querySelector('.suredel');
+
+            var sureBtn = document.querySelector('.sure');
+
+            sureBox.style.transform = 'scale(1)';
+            sureBtn.onclick = function(){
+                allBtn.style.display = 'none';
+                tool.style.display = 'none';
+                sureBox.style.transform = 'scale(0)';
+                out.style.display = 'none';
+                for(var i =0;i<saveElement.length;i++){
+                    var key = saveElement[i].parentNode.getAttribute('key');
+                    console.log(1);
+                    for(var j=0;j<seachUrl(pageResize,content).length;j++){
+
+                        if(key==seachUrl(pageResize,content)[j].name){
+
+                            seachUrl(pageResize,content).splice(j,1);
+
+                            break;
+                        }
+                    }
+
+                }
+                num = 0;
+                saveElement=[];
+                creatContent(seachUrl(pageResize,content),contentBox);
+
+                aClick();
+
+                checkAll();
+            };
+            var cancle = document.querySelector('.cancle');
+            var no = document.querySelector('.no');
+            no.onclick = cancle.onclick = function(){
+                sureBox.style.transform = 'scale(0)';
+                out.style.display = 'none';
+            };
+        };
+    }
+
+    var renameBtn = document.querySelector('#rename');
+
+    renameBtn.onclick = function(){
+        if(saveElement.length<=0) return;//容错处理
+
+        var nameBox = saveElement[0].parentNode.querySelector('.name .file-title');
+
+        console.log(nameBox);
+
+        var key = saveElement[0].parentNode.getAttribute('key');
+
+        var text = nameBox.innerHTML;//线保存一下原来的数据
+
+        var input = document.createElement('input');
+
+        input.value = text;
+
+        nameBox.innerHTML = '';
+
+        input.onblur = function(){
+            for(var i=0;i<seachUrl(pageResize,content).length;i++){
+                if(seachUrl(pageResize,content)[i].name==key){
+                    seachUrl(pageResize,content)[i].title = this.value;
+                }
+            }
+
+            //更新内容
+            creatContent(seachUrl(pageResize,content),contentBox);
+            aClick();
+            checkAll();
+        };
+
+        nameBox.appendChild(input);
+        input.select();
+
+    };
+    // 移动到
+    var reMove = document.querySelector('#tool #move-to-btn');
+    var moveBox = document.querySelector('#move-to');
+
+    creatSide(menu,moveBox);
+
+    reMove.onclick = function(){
+
+    };
+
+    // 注销事件
+    document.onclick = function(){
+        if(btns.state){
+            btns.style.color='';
+            btns.state = false;
+            taskBox.style.transform='scale(0)';
+        }
+        if(sBtn.state){
+            curmes.style.display='none';
+            sBtn.state = false;
+            sIco.style.transform='rotateZ(0)';
+        }
+        if(listBtn.state){
+            var h = btnBox.scrollHeight;
+            MTween({
+                obj:btnBox,
+                attrs:{
+                    opacity:0,
+                    height:10+'px'
+                },
+                begins:{
+                    opacity:1,
+                    height:h+'px'
+                },
+                duration:100,
+                callBack:function(){
+                    listBtn.state = false;
+                    btnBox.style.display = 'none';
+                }
+            });
+        }
+        if(addBtn.state){
+            var h = addBox.scrollHeight;
+            MTween({
+                obj:addBox,
+                attrs:{
+                    opacity:0,
+                    height:10+'px'
+                },
+                begins:{
+                    opacity:1,
+                    height:h+'px'
+                },
+                duration:100,
+                callBack:function(){
+                    addBtn.state = false;
+                    addBox.style.display = 'none';
+                }
+            });
+        }
+        var menu = document.querySelector('.menubox');
+        menu.style.opacity = 0;
+        menu.style.transform = 'scale(0)';
+
+    }
+</script>
+</body>
+</html>
